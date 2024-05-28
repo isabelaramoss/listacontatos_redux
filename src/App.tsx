@@ -1,7 +1,8 @@
 //import React from 'react'
+import Header from './containers/Header'
 
 function App() {
-  return <h3>Olá</h3>
+  return <Header />
 }
 
 export default App
