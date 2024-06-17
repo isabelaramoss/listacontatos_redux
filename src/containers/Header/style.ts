@@ -1,14 +1,18 @@
 import styled from 'styled-components'
 
-export const Header = styled.header`
-  height: 100px;
+export const HeaderContainer = styled.header`
   width: 100%;
-  background-color: #eee;
-`
+  heigh: 20rem;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 32px;
 
-export const Titulo = styled.h3`
-  font-size: 30px;
-  text-align: center;
-  padding: 8px;
-  color: #010101;
+  h1 {
+    font-size: 32px;
+    font-weight: bold;
+    color: #000;
+  }
 `
+//mudar cor h1 para branco depois de adicionar o fundo

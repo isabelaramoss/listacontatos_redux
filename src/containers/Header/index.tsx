@@ -1,15 +1,11 @@
-import { Header, Titulo } from './style'
+import { HeaderContainer } from './style'
 
-const Cabecalho = () => {
+const Header = () => {
   return (
-    <Header>
-      <Titulo>Contatos</Titulo>
-      <form>
-        <input placeholder="Buscar contato" />
-        <button>Buscar</button>
-      </form>
-    </Header>
+    <HeaderContainer>
+      <h1>Meus contatos</h1>
+    </HeaderContainer>
   )
 }
 
-export default Cabecalho
+export default Header
