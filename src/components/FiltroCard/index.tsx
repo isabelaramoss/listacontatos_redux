@@ -1,14 +1,14 @@
 import * as S from './style'
+import FiltroTag from './FiltroTag'
 
 const FiltroCard = () => {
   return (
     <>
-      <p>Filtrar</p>
-      <S.Card>
-        <div>s</div>
-      </S.Card>
+      <S.Filtrar>Filtrar:</S.Filtrar>
+      <FiltroTag />
     </>
   )
 }
 
 export default FiltroCard
+// todos emergência família amigos trabalho

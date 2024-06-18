@@ -31,6 +31,6 @@ export const Buscar = styled.input`
   background-color: #e4e3e3;
   padding: 8px 0;
   padding-left: 16px;
-  padding-right: 40px;
-  margin-right: 56px;
+  padding-right: 72px;
+  margin-right: 40px;
 `
