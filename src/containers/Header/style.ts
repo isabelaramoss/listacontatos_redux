@@ -27,8 +27,8 @@ export const PesquisaContainer = styled.div`
 
 export const Buscar = styled.input`
   border-radius: 16px;
-  border: none;
-  background-color: #e4e3e3;
+  border: solid 0.4px #202020;
+  background-color: #efeeee;
   padding: 8px 0;
   padding-left: 16px;
   padding-right: 72px;

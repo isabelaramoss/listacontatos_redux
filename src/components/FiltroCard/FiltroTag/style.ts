@@ -2,7 +2,6 @@ import styled from 'styled-components'
 import { Props } from '.'
 
 export const TagCard = styled.div<Props>`
-  font-weight: bold;
   font-size: 10px;
   font-style: italic;
   padding: 6px 8px;

@@ -12,6 +12,7 @@ const Header = () => {
         <S.PesquisaContainer>
           <S.Buscar type="text" placeholder="Procurar contato" />
           <FiltroCard />
+          <FiltroTag ativo />
           <FiltroTag />
           <FiltroTag />
           <FiltroTag />
