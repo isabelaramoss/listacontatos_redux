@@ -1,5 +1,5 @@
 import FiltroCard from '../../components/FiltroCard'
-import FiltroTag from '../../components/FiltroCard/FiltroTag'
+import FiltroTag from '../../components/FiltroTag'
 import * as S from './style'
 
 const Header = () => {
@@ -12,11 +12,11 @@ const Header = () => {
         <S.PesquisaContainer>
           <S.Buscar type="text" placeholder="Procurar contato" />
           <FiltroCard />
-          <FiltroTag ativo />
-          <FiltroTag />
-          <FiltroTag />
-          <FiltroTag />
-          <FiltroTag />
+          <FiltroTag ativo legenda="Todos" />
+          <FiltroTag legenda="Emergência" />
+          <FiltroTag legenda="Família" />
+          <FiltroTag legenda="Amigos" />
+          <FiltroTag legenda="Trabalho" />
         </S.PesquisaContainer>
       </S.HeaderContainer>
     </>

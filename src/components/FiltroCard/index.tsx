@@ -5,4 +5,3 @@ const FiltroCard = () => {
 }
 
 export default FiltroCard
-// todos emergência família amigos trabalho
