@@ -5,6 +5,8 @@ export const Container = styled.div`
   max-width: 64rem;
   width: 100%;
   height: 100vh;
+  margin-top: 32px;
 `
+//talvez color: #6E7BBF;
 
 export default Container
