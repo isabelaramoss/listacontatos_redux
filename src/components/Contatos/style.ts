@@ -1,11 +1,12 @@
 import styled from 'styled-components'
+import variaveis from '../../styles/variaveis'
 
 export const Card = styled.div`
   width: 100%;
   padding: 16px;
   justify-content: space-between;
-  background-color: #eeee;
-  border: solid 1px #a066ff;
+  background-color: ${variaveis.cinza_claro};
+  border: solid 1px ${variaveis.lilas};
   border-radius: 16px;
   margin-top: 24px;
   margin-bottom: 16px;
@@ -19,7 +20,7 @@ export const InfosContato = styled.div`
 `
 
 export const InfosInput = styled.input`
-  color: #010101;
+  color: ${variaveis.preto};
   font-size: 20px;
   background-color: none;
   outline: none;
@@ -37,7 +38,7 @@ export const BarraAcoes = styled.div`
 export const Botoes = styled.button`
   font-weight: bold;
   font-size: 12px;
-  color: #fff;
+  color: ${variaveis.branco};
   padding: 8px 12px;
   border-radius: 16px;
   border: none;
@@ -50,15 +51,15 @@ export const Botoes = styled.button`
 `
 
 export const BotaoEditar = styled(Botoes)`
-  background-color: #6e7bbf;
+  background-color: ${variaveis.roxo};
 `
 
 export const BotaoSalvar = styled(Botoes)`
-  background-color: #dff0e2;
+  background-color: ${variaveis.cianeto};
 `
 
 export const BotaoCancelarRemover = styled(Botoes)`
-  background-color: #ff5b5b;
+  background-color: ${variaveis.vermelho};
 `
 
 /* margin: 0 auto;
