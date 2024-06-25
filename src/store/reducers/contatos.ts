@@ -1,5 +1,6 @@
 import { createSlice, PayloadAction } from '@reduxjs/toolkit'
 import ContatoClasse from '../../models/ContatoClasse'
+import * as enums from '../../util/enums/Contatos'
 
 type ContatoState = {
   itens: ContatoClasse[]
@@ -11,12 +12,14 @@ const initialState: ContatoState = {
       nome: 'Isabela Ramos',
       tel: '11 998765432',
       email: 'isabela@email.com',
+      tag: enums.Tag.EMERGENCIA,
       id: 1
     },
     {
       nome: 'Nicole',
       tel: '21 934567890',
       email: '',
+      tag: enums.Tag.AMIGOS,
       id: 2
     }
   ]

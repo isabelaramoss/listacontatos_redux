@@ -7,6 +7,11 @@ export const Container = styled.div`
   height: 100vh;
   margin-top: 32px;
 `
+
+export const subTitulo = styled.p`
+  font-size: 9px;
+`
+
 //talvez color: #6E7BBF;
 
 export default Container
