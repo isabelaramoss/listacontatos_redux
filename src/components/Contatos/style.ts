@@ -16,7 +16,6 @@ export const Card = styled.div`
 export const InfosContato = styled.div`
   display: flex;
   align-items: center;
-  gap: 1rem;
 `
 
 export const InfosInput = styled.input`
