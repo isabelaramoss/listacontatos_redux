@@ -16,4 +16,11 @@ export const TagCard = styled.div<PropsSemLegenda>`
   border-radius: 16px;
   border: none;
   cursor: pointer;
+
+  @media (max-width: 768px) {
+    margin: 8px auto;
+    width: 40%;
+    justify-content: center;
+    display: none;
+  }
 `

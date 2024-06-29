@@ -10,6 +10,10 @@ export const HeaderContainer = styled.header`
     rgba(110, 123, 191, 0.85),
     rgba(255, 91, 91, 0.85)
   );
+
+  @media (max-width: 768px) {
+    margin: 0 auto;
+  }
 `
 
 export const Titulo = styled.h1`
@@ -23,6 +27,10 @@ export const PesquisaContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+
+  @media (max-width: 768px) {
+    display: block;
+  }
 `
 
 export const Buscar = styled.input`
@@ -33,4 +41,8 @@ export const Buscar = styled.input`
   padding-left: 16px;
   padding-right: 72px;
   margin-right: 40px;
+
+  @media (max-width: 768px) {
+    margin: 0;
+  }
 `
