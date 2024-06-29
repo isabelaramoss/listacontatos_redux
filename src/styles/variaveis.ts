@@ -9,5 +9,5 @@ export default {
   cinza_claro3: '#e4e3e3',
   cinza_escuro: '#454545',
   cinza_escuro2: '#202020',
-  cianeto: '#dff0e2'
+  cianeto: '#41DE64'
 }

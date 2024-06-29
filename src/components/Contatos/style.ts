@@ -2,20 +2,33 @@ import styled from 'styled-components'
 import variaveis from '../../styles/variaveis'
 
 export const Card = styled.div`
-  width: 100%;
+  display: flex;
+  width: 50%;
   padding: 16px;
+  align-items: center;
   justify-content: space-between;
   background-color: ${variaveis.cinza_claro};
   border: solid 1px ${variaveis.lilas};
   border-radius: 16px;
   margin-top: 24px;
   margin-bottom: 16px;
-  box-shadow: 0px 4px 4px rbga(0, 0, 0, 0.1);
+
+  @media (max-width: 768px) {
+    display: block;
+    height: auto;
+    width: 100%;
+    max-width: 360px;
+  }
 `
 
 export const InfosContato = styled.div`
   display: flex;
   align-items: center;
+  padding: 5px;
+
+  @media (max-width: 768px) {
+    font-size: 20px;
+  }
 `
 
 export const InfosInput = styled.input`
@@ -31,7 +44,16 @@ export const TagContato = styled.span`
 
 export const BarraAcoes = styled.div`
   display: flex;
-  gap: 1rem;
+  flex-direction: column;
+  justify-content: center;
+  margin-right: 16px;
+
+  @media (max-width: 768px) {
+    width: 50%;
+    padding: 4px 0px;
+    margin: auto;
+    margin-top: 8px;
+  }
 `
 
 export const Botoes = styled.button`
@@ -51,17 +73,22 @@ export const Botoes = styled.button`
 
 export const BotaoEditar = styled(Botoes)`
   background-color: ${variaveis.roxo};
+  margin-bottom: 8px;
+
+  @media (max-width: 768px) {
+    margin-top: 4px;
+  }
 `
 
 export const BotaoSalvar = styled(Botoes)`
   background-color: ${variaveis.cianeto};
+  margin-bottom: 8px;
+
+  @media (max-width: 768px) {
+    margin-top: 4px;
+  }
 `
 
 export const BotaoCancelarRemover = styled(Botoes)`
   background-color: ${variaveis.vermelho};
 `
-
-/* margin: 0 auto;
-max-width: 64rem;
-width: 100%;
-height: 100vh; */
