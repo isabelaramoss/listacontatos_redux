@@ -1,4 +1,4 @@
-import { FormEvent, useState } from 'react'
+import { useState } from 'react'
 import { useDispatch } from 'react-redux'
 import { useNavigate } from 'react-router-dom'
 import * as S from './style'
@@ -23,8 +23,12 @@ const Formulario = () => {
   const [email, setEmail] = useState('')
   const [tag, setTag] = useState(enums.Tag.TODOS)
 
-  const cadastroContato = (e: FormEvent) => {
+  const cadastroContato = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault()
+
+    const isNameValid = /^[a-zA-Z ]+$/.test(nome)
+
+    if (!isNameValid) return alert('Nome inválido! Digite apenas letras.')
 
     dispatch(
       cadastrarContato({
@@ -48,21 +52,23 @@ const Formulario = () => {
             value={nome}
             onChange={({ target }) => setNome(target.value)}
             placeholder="Nome do contato"
+            required
           />
         </div>
         <div>
           <TelIcon />
           <S.Infos
-            type="text"
+            type="number"
             value={tel}
             onChange={({ target }) => setTel(target.value)}
             placeholder="Número do contato"
+            required
           />
         </div>
         <div>
           <EmailIcon />
           <S.Infos
-            type="text"
+            type="email"
             value={email}
             onChange={({ target }) => setEmail(target.value)}
             placeholder="E-mail do contato (opcional)"
