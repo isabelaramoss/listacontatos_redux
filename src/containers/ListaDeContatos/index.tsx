@@ -2,6 +2,7 @@ import { useSelector } from 'react-redux'
 import { RootReducer } from '../../store'
 import Contatos from '../../components/Contatos'
 import * as S from './style'
+import BotaoAdicionar from '../../components/BotaoAdicionar'
 
 const ListaDeContatos = () => {
   const { itens } = useSelector((state: RootReducer) => state.contatos)
@@ -64,6 +65,7 @@ const ListaDeContatos = () => {
           </li>
         ))}
       </ul>
+      <BotaoAdicionar />
     </S.Container>
   )
 }

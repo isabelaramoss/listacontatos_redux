@@ -1,9 +1,16 @@
+import {
+  BsFillPersonFill,
+  BsTelephoneFill,
+  BsEnvelopeFill,
+  BsHash
+} from 'react-icons/bs'
+//<BsFillPersonFill />  <BsTelephoneFill /> <BsEnvelopeFill /> <BsHash />
 import styled from 'styled-components'
 import variaveis from '../../styles/variaveis'
 
 export const Card = styled.div`
   display: flex;
-  width: 50%;
+  width: 70%;
   padding: 16px;
   align-items: center;
   justify-content: space-between;
@@ -40,6 +47,8 @@ export const InfosInput = styled.input`
 
 export const TagContato = styled.span`
   font-style: italic;
+  display: flex;
+  align-items: center;
 `
 
 export const BarraAcoes = styled.div`
@@ -91,4 +100,23 @@ export const BotaoSalvar = styled(Botoes)`
 
 export const BotaoCancelarRemover = styled(Botoes)`
   background-color: ${variaveis.vermelho};
+`
+
+export const NomeIcon = styled(BsFillPersonFill)`
+  font-size: 20px;
+  margin-right: 10px;
+`
+export const TelIcon = styled(BsTelephoneFill)`
+  font-size: 20px;
+  margin-right: 10px;
+`
+
+export const EmailIcon = styled(BsEnvelopeFill)`
+  font-size: 20px;
+  margin-right: 10px;
+`
+
+export const TagIcon = styled(BsHash)`
+  font-size: 20px;
+  margin-right: 10px;
 `

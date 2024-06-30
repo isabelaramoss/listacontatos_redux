@@ -93,11 +93,23 @@ const Contatos = ({
           </>
         ) : (
           <>
-            <S.InfosContato>{nomeOriginal}</S.InfosContato>
-            <S.InfosContato>{telOriginal}</S.InfosContato>
-            <S.InfosContato>{emailOriginal}</S.InfosContato>
             <S.InfosContato>
-              <S.TagContato>{tag}</S.TagContato>
+              <S.NomeIcon />
+              {nomeOriginal}
+            </S.InfosContato>
+            <S.InfosContato>
+              <S.TelIcon />
+              {telOriginal}
+            </S.InfosContato>
+            <S.InfosContato>
+              <S.EmailIcon />
+              {emailOriginal}
+            </S.InfosContato>
+            <S.InfosContato>
+              <S.TagContato>
+                <S.TagIcon />
+                {tag}
+              </S.TagContato>
             </S.InfosContato>
           </>
         )}
