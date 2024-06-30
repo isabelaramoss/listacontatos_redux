@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import variaveis from '../../styles/variaveis'
 
 export const HeaderContainer = styled.header`
   width: 100%;
@@ -45,4 +46,12 @@ export const Buscar = styled.input`
   @media (max-width: 768px) {
     margin: 0;
   }
+`
+
+export const BotaoVoltar = styled.button`
+  background-color: ${variaveis.roxo};
+  color: ${variaveis.branco};
+  padding: 12px 6px;
+  border-radius: 8px;
+  cursor: pointer;
 `
