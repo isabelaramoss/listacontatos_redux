@@ -51,9 +51,8 @@ export const TagContato = styled.span`
   font-style: italic;
   display: flex;
   align-items: center;
-  display: inline-block;
+
   margin-rigth: 8px;
-  //border-radius: 8px;
 `
 
 export const BarraAcoes = styled.div`
