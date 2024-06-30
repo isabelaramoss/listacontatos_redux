@@ -4,7 +4,7 @@ export const Container = styled.div`
   margin: auto;
   width: 100%;
   max-width: 700px;
-  height: 100%
+  height: 100%;
   align-content: center;
   margin-top: 32px;
 

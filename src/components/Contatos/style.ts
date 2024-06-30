@@ -4,7 +4,6 @@ import {
   BsEnvelopeFill,
   BsHash
 } from 'react-icons/bs'
-//<BsFillPersonFill />  <BsTelephoneFill /> <BsEnvelopeFill /> <BsHash />
 import styled from 'styled-components'
 import variaveis from '../../styles/variaveis'
 
@@ -40,15 +39,21 @@ export const InfosContato = styled.div`
 
 export const InfosInput = styled.input`
   color: ${variaveis.preto};
-  font-size: 20px;
+  font-size: 18px;
   background-color: none;
   outline: none;
+  padding: 6px;
+  border-radius: 8px;
+  border: 1px solid ${variaveis.preto};
 `
 
 export const TagContato = styled.span`
   font-style: italic;
   display: flex;
   align-items: center;
+  display: inline-block;
+  margin-rigth: 8px;
+  //border-radius: 8px;
 `
 
 export const BarraAcoes = styled.div`
