@@ -17,4 +17,9 @@ export const NovoContato = styled(Link)`
   cursor: pointer;
   font-size: 40px;
   text-decoration: none;
+
+  &:hover {
+    filter: saturate(150%);
+    transition: filter 0.2s;
+  }
 `

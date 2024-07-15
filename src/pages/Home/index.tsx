@@ -3,7 +3,7 @@ import ListaDeContatos from '../../containers/ListaDeContatos'
 
 const Home = () => (
   <>
-    <Header />
+    <Header mostrarFiltros={true} />
     <ListaDeContatos />
   </>
 )

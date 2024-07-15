@@ -40,7 +40,7 @@ const Header = ({ mostrarFiltros }: Props) => {
         </>
       ) : (
         <S.BotaoVoltar onClick={() => navigate('/')}>
-          Voltar a Meus Contatos
+          Voltar a contatos salvos
         </S.BotaoVoltar>
       )}
     </S.HeaderContainer>

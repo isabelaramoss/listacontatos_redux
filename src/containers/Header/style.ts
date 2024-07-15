@@ -54,4 +54,10 @@ export const BotaoVoltar = styled.button`
   padding: 12px 6px;
   border-radius: 8px;
   cursor: pointer;
+  border: 1px solid;
+
+  &:hover {
+    filter: saturate(150%);
+    transition: filter 0.2s;
+  }
 `

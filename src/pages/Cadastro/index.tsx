@@ -3,11 +3,9 @@ import Header from '../../containers/Header'
 
 const Cadastro = () => (
   <>
-    <Header />
+    <Header mostrarFiltros={false} />
     <Formulario />
   </>
 )
 
 export default Cadastro
-
-//mostrarFiltros={false}
