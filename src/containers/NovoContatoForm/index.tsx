@@ -3,15 +3,9 @@ import { useDispatch } from 'react-redux'
 import { useNavigate } from 'react-router-dom'
 import * as S from './style'
 import { BotaoSalvar } from '../../components/Contatos/style'
-import * as enums from '../../util/enums/Contatos'
 import { cadastrarContato } from '../../store/reducers/contatos'
 import Container from '../ListaDeContatos/style'
-import {
-  NomeIcon,
-  TelIcon,
-  EmailIcon,
-  TagIcon
-} from '../../components/Contatos/style'
+import { NomeIcon, TelIcon, EmailIcon } from '../../components/Contatos/style'
 
 const Formulario = () => {
   const dispatch = useDispatch()
@@ -21,7 +15,6 @@ const Formulario = () => {
   const [nome, setNome] = useState('')
   const [tel, setTel] = useState('')
   const [email, setEmail] = useState('')
-  const [tag, setTag] = useState(enums.Tag.TODOS)
 
   const cadastroContato = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault()
@@ -34,8 +27,7 @@ const Formulario = () => {
       cadastrarContato({
         nome,
         tel,
-        email,
-        tag
+        email
       })
     )
     navigate('/')
@@ -74,26 +66,6 @@ const Formulario = () => {
             placeholder="E-mail do contato (opcional)"
           />
         </div>
-        <S.Opcoes>
-          <S.Tags>
-            <TagIcon />
-            <S.TagContainer>
-              {Object.values(enums.Tag).map((tag) => (
-                <S.Opcao key={tag}>
-                  <input
-                    value={tag}
-                    name="tag"
-                    type="radio"
-                    onChange={({ target }) => setTag(target.value as enums.Tag)}
-                    id={tag}
-                    defaultChecked={tag === enums.Tag.TODOS}
-                  />{' '}
-                  <label htmlFor="{tag}">{tag}</label>
-                </S.Opcao>
-              ))}
-            </S.TagContainer>
-          </S.Tags>
-        </S.Opcoes>
         <BotaoSalvar type="submit">Cadastrar</BotaoSalvar>
       </S.Form>
     </Container>

@@ -10,7 +10,6 @@ const Contatos = ({
   nome: nomeOriginal,
   tel: telOriginal,
   email: emailOriginal,
-  tag,
   id
 }: Props) => {
   const dispatch = useDispatch()
@@ -47,7 +46,6 @@ const Contatos = ({
         nome,
         tel,
         email,
-        tag,
         id
       })
     )
@@ -55,7 +53,6 @@ const Contatos = ({
   }
 
   return (
-    //fazer aqui um está editando e arrumar display
     <S.Card>
       <div>
         {estaEditando ? (
@@ -86,10 +83,6 @@ const Contatos = ({
                 disabled={!estaEditando}
               />
             </S.InfosContato>
-
-            <S.InfosContato>
-              <S.TagContato>{tag}</S.TagContato>
-            </S.InfosContato>
           </>
         ) : (
           <>
@@ -104,12 +97,6 @@ const Contatos = ({
             <S.InfosContato>
               <S.EmailIcon />
               {emailOriginal}
-            </S.InfosContato>
-            <S.InfosContato>
-              <S.TagContato>
-                <S.TagIcon />
-                {tag}
-              </S.TagContato>
             </S.InfosContato>
           </>
         )}
