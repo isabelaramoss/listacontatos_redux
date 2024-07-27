@@ -20,9 +20,9 @@ const ListaDeContatos = () => {
     <S.Container>
       <ul>
         {contatos.map((t) => (
-          <li key={t.nome}>
+          <S.listContatos key={t.nome}>
             <Contatos nome={t.nome} tel={t.tel} email={t.email} id={t.id} />
-          </li>
+          </S.listContatos>
         ))}
       </ul>
       <BotaoAdicionar />

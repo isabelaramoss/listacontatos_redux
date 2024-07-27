@@ -4,7 +4,6 @@ import { useNavigate } from 'react-router-dom'
 import * as S from './style'
 import { BotaoSalvar } from '../../components/Contatos/style'
 import { cadastrarContato } from '../../store/reducers/contatos'
-import Container from '../ListaDeContatos/style'
 import { NomeIcon, TelIcon, EmailIcon } from '../../components/Contatos/style'
 
 const Formulario = () => {
@@ -34,10 +33,10 @@ const Formulario = () => {
   }
 
   return (
-    <Container>
+    <S.ContainerForm>
       <h3>Novo Contato</h3>
       <S.Form onSubmit={cadastroContato}>
-        <div>
+        <S.Items>
           <NomeIcon />
           <S.Infos
             type="text"
@@ -46,18 +45,18 @@ const Formulario = () => {
             placeholder="Nome do contato"
             required
           />
-        </div>
-        <div>
+        </S.Items>
+        <S.Items>
           <TelIcon />
           <S.Infos
-            type="number"
+            type="tel"
             value={tel}
             onChange={({ target }) => setTel(target.value)}
             placeholder="Número do contato"
             required
           />
-        </div>
-        <div>
+        </S.Items>
+        <S.Items>
           <EmailIcon />
           <S.Infos
             type="email"
@@ -65,10 +64,10 @@ const Formulario = () => {
             onChange={({ target }) => setEmail(target.value)}
             placeholder="E-mail do contato (opcional)"
           />
-        </div>
+        </S.Items>
         <BotaoSalvar type="submit">Cadastrar</BotaoSalvar>
       </S.Form>
-    </Container>
+    </S.ContainerForm>
   )
 }
 

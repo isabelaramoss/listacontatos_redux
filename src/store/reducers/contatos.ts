@@ -14,10 +14,16 @@ const initialState: ContatoState = {
       id: 1
     },
     {
+      nome: 'Victor',
+      tel: '11 97654-3210',
+      email: 'victor@email.com',
+      id: 2
+    },
+    {
       nome: 'Nicole',
       tel: '21 934567890',
       email: '',
-      id: 2
+      id: 3
     }
   ]
 }

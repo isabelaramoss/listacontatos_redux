@@ -15,6 +15,11 @@ export const Container = styled.div`
   }
 `
 
+export const listContatos = styled.li`
+  display: flex;
+  justify-content: center;
+`
+
 export const subTitulo = styled.p`
   font-size: 9px;
 `

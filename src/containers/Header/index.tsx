@@ -20,14 +20,12 @@ const Header = ({ mostrarFiltros }: Props) => {
           <div>
             <S.Titulo>Meus contatos</S.Titulo>
           </div>
-          <S.PesquisaContainer>
-            <S.Buscar
-              type="text"
-              placeholder="Procurar contato"
-              value={termo}
-              onChange={(e) => dispatch(alterarTermo(e.target.value))}
-            />
-          </S.PesquisaContainer>
+          <S.Buscar
+            type="text"
+            placeholder="Procurar contato"
+            value={termo}
+            onChange={(e) => dispatch(alterarTermo(e.target.value))}
+          />
         </>
       ) : (
         <>

@@ -1,8 +1,7 @@
 import {
   BsFillPersonFill,
   BsTelephoneFill,
-  BsEnvelopeFill,
-  BsHash
+  BsEnvelopeFill
 } from 'react-icons/bs'
 import styled from 'styled-components'
 import variaveis from '../../styles/variaveis'
@@ -45,14 +44,6 @@ export const InfosInput = styled.input`
   padding: 6px;
   border-radius: 8px;
   border: 1px solid ${variaveis.preto};
-`
-
-export const TagContato = styled.span`
-  font-style: italic;
-  display: flex;
-  align-items: center;
-
-  margin-rigth: 8px;
 `
 
 export const BarraAcoes = styled.div`
@@ -116,11 +107,6 @@ export const TelIcon = styled(BsTelephoneFill)`
 `
 
 export const EmailIcon = styled(BsEnvelopeFill)`
-  font-size: 20px;
-  margin-right: 10px;
-`
-
-export const TagIcon = styled(BsHash)`
   font-size: 20px;
   margin-right: 10px;
 `
